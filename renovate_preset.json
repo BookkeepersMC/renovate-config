@@ -14,9 +14,13 @@
         },
         {
             "matchDatasources": ["maven"],
-            "matchPackagePatterns": ["^com\\.bookkeepersmc(\\.|:)"],
+            "matchPackagePatterns": ["^com\\.bookkeepersmc(\\.|:)", "^notebook\\-loom(\\.|:)"],
             "registryUrls": ["https://bookkeepersmc.github.io/m2"]
         },
+        {
+            "matchDatasources": ["maven"],
+            "matchPackagePatterns": ["^com\\.mojang(\\.|:)", "^net\\.minecraft(\\.|:)"],
+        }.
         {
             "matchDatasources": ["maven"],
             "matchPackagePatterns": ["^net\\.fabricmc"],
