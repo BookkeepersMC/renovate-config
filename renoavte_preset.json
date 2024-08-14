@@ -1,0 +1,30 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "addLabels": ["dependencies"],
+    "dependencyDashboard": true,
+    "dependencyDashboardApproval": true,
+    "dependencyDashboardLabels": ["dependencies"],
+    "onboardingPrTitle": "Configure Renovate [skip ci]",
+    "onboardingNoDeps": true,
+    "packageRules": [
+        {
+            "matchDatasources": ["maven"],
+            "registryUrls": ["https://repo1.maven.org/maven2/", "https://plugins.gradle.org/m2/"]
+        },
+        {
+            "matchDatasources": ["maven"],
+            "matchPackagePatterns": ["^com\\.bookkeepersmc(\\.|:)"],
+            "registryUrls": ["https://bookkeepersmc.github.io/m2"]
+        },
+        {
+            "matchDatasources": ["maven"],
+            "matchPackagePatterns": ["^net\\.fabricmc"],
+            "registryUrls": ["https://maven.fabricmc.net"]
+        },
+        {
+            "matchPackagePatterns": ["^org\\.ow2\\.asm:asm.*"],
+            "groupName": "asm"
+        }
+    ],
+    "presetCachePersistence": true
+}
