@@ -20,7 +20,7 @@
         {
             "matchDatasources": ["maven"],
             "matchPackagePatterns": ["^com\\.mojang(\\.|:)", "^net\\.minecraft(\\.|:)"],
-        }.
+        },
         {
             "matchDatasources": ["maven"],
             "matchPackagePatterns": ["^net\\.fabricmc"],
