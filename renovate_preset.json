@@ -6,6 +6,7 @@
     "dependencyDashboardApproval": true,
     "dependencyDashboardLabels": ["dependencies"],
     "onboardingPrTitle": "Configure Renovate [skip ci]",
+    "scedule": ["before 11am every weekday"],
     "onboardingNoDeps": true,
     "packageRules": [
         {
